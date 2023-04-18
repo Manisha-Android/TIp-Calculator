@@ -1,0 +1,63 @@
+<LinearLayout xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/bill_amount"/>
+
+    <EditText
+        android:id="@+id/billAmountEditText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:backgroundTint="?android:attr/colorMultiSelectHighlight"
+        android:hint="@string/app_name"
+        android:inputType="numberDecimal"
+        android:minHeight="48dp"
+        android:autofillHints=""
+        tools:ignore="VisualLintTextFieldSize" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/tip_percentage"
+        android:layout_marginTop="16dp"
+        android:backgroundTint="@color/purple_200"/>
+
+    <SeekBar
+        android:id="@+id/tipPercentageSeekBar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:max="50"
+        android:progress="15"
+        android:layout_marginTop="8dp"
+        android:backgroundTint="?attr/scrimBackground"/>
+
+    <TextView
+        android:id="@+id/tipPercentageTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/_15"
+        android:textSize="18sp"
+        android:textColor="@color/black"
+        android:layout_marginTop="8dp"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/tip_amount"
+        android:layout_marginTop="16dp"/>
+
+    <TextView
+        android:id="@+id/tipAmountTextView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        android:layout_marginTop="8dp"/>
+
+</LinearLayout>
